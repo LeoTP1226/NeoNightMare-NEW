@@ -629,7 +629,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 448958558}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1881869037}
+        m_MethodName: ChangeToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Week3 Monday
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1308774452
 MonoBehaviour:
   m_ObjectHideFlags: 0

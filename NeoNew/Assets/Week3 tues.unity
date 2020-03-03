@@ -840,6 +840,28 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2141244784}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &399260691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399260689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b35a0f9040e2249bfe9b2d8cf3a650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  numOfHearts: 3
+  hearts:
+  - {fileID: 1484534216}
+  - {fileID: 646797089}
+  - {fileID: 595961199}
+  fullHeart: {fileID: 21300000, guid: de42169e33bffc141b7a9959e392bb12, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 22adc0afe2e88fe4390162aaa4432391, type: 3}
+  CharaHealth: 3
+  speed: 0
 --- !u!54 &399260694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12529,59 +12551,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1865666041
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1865666043}
-  - component: {fileID: 1865666042}
-  m_Layer: 0
-  m_Name: Test
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1865666042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865666041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce39cfa480f1ec4db3d1ecb0b14178b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  numOfHearts: 3
-  hearts:
-  - {fileID: 1484534216}
-  - {fileID: 646797089}
-  - {fileID: 595961199}
-  fullHeart: {fileID: 21300000, guid: de42169e33bffc141b7a9959e392bb12, type: 3}
-  emptyHeart: {fileID: 21300000, guid: 22adc0afe2e88fe4390162aaa4432391, type: 3}
-  CharaHealth: 3
-  speed: 0
---- !u!4 &1865666043
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865666041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 90.98418, y: 486.2558, z: -91.86089}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977472835
 GameObject:
