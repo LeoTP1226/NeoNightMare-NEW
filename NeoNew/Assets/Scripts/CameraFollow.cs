@@ -17,8 +17,7 @@ public class CameraFollow : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void LateUpdate()
+    private void LateUpdate()
     {
         Vector3 newPos = PlayerTransform.position + _cameraOffset;
 
