@@ -854,6 +854,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   numOfHearts: 3
+  deathParticles: {fileID: 6286102509810972249, guid: e9d416d27bfbce149b327bb14d3bc670,
+    type: 3}
   hearts:
   - {fileID: 1484534216}
   - {fileID: 646797089}

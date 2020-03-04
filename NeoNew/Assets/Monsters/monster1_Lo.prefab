@@ -137,3 +137,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 1
+  deathParticles: {fileID: 7175104571894261608, guid: d47f2e8297ce60042ba354b0d742ba45,
+    type: 3}

@@ -6,6 +6,7 @@ public class EnemyDeath : MonoBehaviour
 {
     public int Health = 1;
     private bool isDead = false;
+    public ParticleSystem deathParticles;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class EnemyDeath : MonoBehaviour
 
     void Death()
     {
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
         isDead = true;
         Destroy(gameObject);
     }

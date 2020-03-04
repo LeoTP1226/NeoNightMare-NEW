@@ -7,6 +7,7 @@ public class Healthiness : MonoBehaviour
 {
     public int health;
     public int numOfHearts;
+    public ParticleSystem deathParticles;
 
     public Image[] hearts;
     public Sprite fullHeart;
@@ -63,6 +64,7 @@ public class Healthiness : MonoBehaviour
     void Death()
     {
         isDead = true;
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
