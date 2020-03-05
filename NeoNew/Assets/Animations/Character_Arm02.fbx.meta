@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: cc884baa19a87854fa7fc565bdb146f1
+guid: 758413a54be622b4fa5394b97b5c6303
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bat
+    second: {fileID: 2100000, guid: 6968d9c67efaa784fb0dccde90b1a779, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jacket
+    second: {fileID: 2100000, guid: 4f3c3becb3742db49a7f80acd6c99923, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin_Lo_defaultMat1
+    second: {fileID: 2100000, guid: 7425b6eb3403fd546a0c44af4c12369e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -41,8 +56,8 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
