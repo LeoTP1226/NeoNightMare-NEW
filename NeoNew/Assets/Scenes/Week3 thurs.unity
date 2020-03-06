@@ -1210,7 +1210,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 513171961}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.25
   m_Height: 1.6
   m_Direction: 1
@@ -1253,7 +1253,6 @@ MonoBehaviour:
   - {fileID: 595961199}
   fullHeart: {fileID: 21300000, guid: de42169e33bffc141b7a9959e392bb12, type: 3}
   emptyHeart: {fileID: 21300000, guid: 22adc0afe2e88fe4390162aaa4432391, type: 3}
-  Bat: {fileID: 1241235961}
   isDead: 0
   CharaHealth: 3
   speed: 0
@@ -22101,7 +22100,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241235961}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 14.999998, y: 11.225039, z: 92.41322}
@@ -33376,6 +33375,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Bat
       objectReference: {fileID: 0}
+    - target: {fileID: -1516881408164471880, guid: 6cca105aeabdf6e4bab81b03a75352f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2604564055290120573, guid: 6cca105aeabdf6e4bab81b03a75352f2,
         type: 3}
       propertyPath: m_TagString
@@ -33385,6 +33389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Body_Lo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604564055290120573, guid: 6cca105aeabdf6e4bab81b03a75352f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6cca105aeabdf6e4bab81b03a75352f2,
         type: 3}

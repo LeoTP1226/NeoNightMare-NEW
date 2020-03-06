@@ -13,7 +13,6 @@ public class Healthiness : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
-    public GameObject Bat;
 
     //[SerializeField] private GameObject OverMenuUI;
     [SerializeField] private bool isDead;
@@ -58,7 +57,7 @@ public class Healthiness : MonoBehaviour
         CharaHealth -= 1;
         numOfHearts -= 1;
 
-        if (CharaHealth <= 0)
+        if (CharaHealth < 1)
         {
             Death();
         }
@@ -69,7 +68,6 @@ public class Healthiness : MonoBehaviour
         isDead = true;
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
-        Destroy(Bat);
         SceneManager.LoadScene("gameover_final");
     }
 
