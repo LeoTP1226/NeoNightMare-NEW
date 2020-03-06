@@ -44,6 +44,7 @@ public class EnemyDeath : MonoBehaviour
     {
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         isDead = true;
+        ScoreScript.scoreValue += 10;
         Destroy(gameObject);
     }
 
