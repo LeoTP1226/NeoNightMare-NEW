@@ -39,7 +39,7 @@ public class Healthiness : MonoBehaviour
             }
         }
     }
-    public int CharaHealth = 9;
+    public int CharaHealth = 3;
     public float speed;
 
 

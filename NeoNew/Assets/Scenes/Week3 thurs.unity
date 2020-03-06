@@ -33529,11 +33529,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4299652709651775315, guid: f6c5d8ada596d3549921fa7824cd041a,
-        type: 3}
-      propertyPath: pauseMenuUI
-      value: 
-      objectReference: {fileID: 605144892}
     - target: {fileID: 4299652709651775324, guid: f6c5d8ada596d3549921fa7824cd041a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33589,5 +33584,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4299652709651775315, guid: f6c5d8ada596d3549921fa7824cd041a,
+        type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 605144892}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c5d8ada596d3549921fa7824cd041a, type: 3}
