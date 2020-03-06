@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Healthiness : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class Healthiness : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public GameObject Bat;
+
+    //[SerializeField] private GameObject OverMenuUI;
+    [SerializeField] private bool isDead;
 
     private void Update()
     {
@@ -34,10 +39,9 @@ public class Healthiness : MonoBehaviour
             }
         }
     }
-    public int CharaHealth = 3;
+    public int CharaHealth = 9;
     public float speed;
 
-    private bool isDead = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -57,7 +61,6 @@ public class Healthiness : MonoBehaviour
         if (CharaHealth <= 0)
         {
             Death();
-
         }
     }
 
@@ -65,6 +68,23 @@ public class Healthiness : MonoBehaviour
     {
         isDead = true;
         Instantiate(deathParticles, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        Destroy(this.gameObject);
+        Destroy(Bat);
+        SceneManager.LoadScene("gameover_final");
     }
+
+    /*
+    public void ActivateMenu()
+    {
+        Time.timeScale = 0;
+        OverMenuUI.SetActive(true);
+    }
+
+    public void DeactivateMenu()
+    {
+        Time.timeScale = 1;
+        OverMenuUI.SetActive(false);
+        OverMenuUI.SetActive(false);
+        isDead = false;
+    } */
 }
