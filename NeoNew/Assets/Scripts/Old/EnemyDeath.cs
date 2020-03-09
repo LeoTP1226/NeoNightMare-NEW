@@ -25,12 +25,12 @@ public class EnemyDeath : MonoBehaviour
 
         if (other.gameObject.tag == "Bat")
         {
-            PlayerDamage();
+            EnemyDamage();
         }
 
     }
 
-    void PlayerDamage()
+    void EnemyDamage()
     {
         Health -= 1;
 
