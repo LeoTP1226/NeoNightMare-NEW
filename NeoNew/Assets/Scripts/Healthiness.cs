@@ -48,11 +48,12 @@ public class Healthiness : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             EnemyDamage();
+            SoundManagerScript.PlaySound("Dmg");
         }
 
     }
 
-    void EnemyDamage()
+    public void EnemyDamage()
     {
         CharaHealth -= 1;
         numOfHearts -= 1;
@@ -69,6 +70,7 @@ public class Healthiness : MonoBehaviour
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
         SceneManager.LoadScene("gameover_final");
+
     }
 
     /*

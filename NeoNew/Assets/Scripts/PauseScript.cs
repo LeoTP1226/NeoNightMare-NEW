@@ -12,6 +12,7 @@ public class PauseScript : MonoBehaviour
       if(Input.GetKeyDown(KeyCode.Escape))
         {
             isPaused = !isPaused;
+            SoundManagerScript.PlaySound("Select");
         }
 
       if (isPaused)
