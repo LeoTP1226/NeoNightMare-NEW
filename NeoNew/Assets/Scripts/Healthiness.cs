@@ -13,9 +13,10 @@ public class Healthiness : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    private float timer = 0;
 
     //[SerializeField] private GameObject OverMenuUI;
-    [SerializeField] private bool isDead;
+    [SerializeField] private static bool isDead;
 
     private void Update()
     {
@@ -69,8 +70,22 @@ public class Healthiness : MonoBehaviour
         isDead = true;
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
-        SceneManager.LoadScene("gameover_final");
+        
+    }
 
+    public static bool PlayerIsDead()
+    {
+        return isDead;
+    }
+
+    public static void resetPlayer()
+    {
+        isDead = false;
+    }
+
+    void ChangeLevel()
+    {
+        SceneManager.LoadScene(0);
     }
 
     /*
