@@ -26,7 +26,7 @@ public class gameOver : MonoBehaviour
 
     void Over()
     {
-        Invoke("ChangeLevel", 3.0f);
+        Invoke("ChangeLevel", 2.5f);
         print("change level");
     }
 
