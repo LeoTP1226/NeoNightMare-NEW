@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -6019083343771084398}
   - component: {fileID: 3225731359289034523}
   - component: {fileID: 4198265940881737061}
+  - component: {fileID: 4699860840615977159}
   m_Layer: 0
   m_Name: monster3_Lo
   m_TagString: Enemy
@@ -139,3 +140,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 71.68983, y: 156.19273, z: 78.74246}
   m_Center: {x: 0, y: 78.71067, z: 24.61255}
+--- !u!114 &4699860840615977159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113778651081701383}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8072921324bc7443b8387f6eae8308e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponent: 
+  deathParticles: {fileID: 6716374145233554661, guid: 77a94bd73ac8c7943abf1f2e5c3a82a8,
+    type: 3}
+  health: 1

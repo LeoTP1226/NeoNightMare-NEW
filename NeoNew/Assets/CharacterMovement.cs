@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody>();
         mainCamera = FindObjectOfType<Camera>();
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

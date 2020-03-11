@@ -1516,6 +1516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bat
       objectReference: {fileID: 0}
+    - target: {fileID: 7050521522000619439, guid: c2c942d23e7eeb146b1a8bd47f24c084,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bat
+      objectReference: {fileID: 0}
     - target: {fileID: 6305921428369774012, guid: c2c942d23e7eeb146b1a8bd47f24c084,
         type: 3}
       propertyPath: m_LocalPosition.x
