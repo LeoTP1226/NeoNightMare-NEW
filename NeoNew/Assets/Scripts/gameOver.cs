@@ -32,6 +32,6 @@ public class gameOver : MonoBehaviour
 
     void ChangeLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 }
