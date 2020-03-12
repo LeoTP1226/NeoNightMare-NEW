@@ -6,11 +6,10 @@ using UnityEngine.UI;
 
 public class BatHit : MonoBehaviour
 {
-
-    public string opponent;
-    public ParticleSystem deathParticles;
-    private bool isDead = false;
     public int health = 1;
+    public string Opposite;
+    private bool isDead = false;
+    public ParticleSystem deathParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,25 +19,18 @@ public class BatHit : MonoBehaviour
     // Update is called once per frame
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag != opponent) return;
+        if (other.gameObject.tag != Opposite) return;
         Debug.Log("Hit the enemy");
-
-
+       
         health -= 1;
         if(health <= 0)
         {
-            Death();
-            ScoreScript.scoreValue += 1;
+            isDead = true;
+            Destroy(gameObject);
+            Instantiate(deathParticles, transform.position, Quaternion.identity);
+            ScoreScript.scoreValue += 10;
         }
         
 
-    }
-
-
-    void Death()
-    {
-        Instantiate(deathParticles, transform.position, Quaternion.identity);
-        isDead = true;
-        Destroy(gameObject);
     }
 }
