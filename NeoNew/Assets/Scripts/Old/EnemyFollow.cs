@@ -13,7 +13,7 @@ public class EnemyFollow : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Rabbit");
     }
 
     // Update is called once per frame

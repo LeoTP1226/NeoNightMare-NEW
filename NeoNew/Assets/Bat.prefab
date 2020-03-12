@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8792120781923206393}
   m_Layer: 0
   m_Name: BatCollider
-  m_TagString: Bat
+  m_TagString: opponent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

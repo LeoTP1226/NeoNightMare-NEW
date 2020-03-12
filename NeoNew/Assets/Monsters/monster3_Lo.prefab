@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8119026192434432532}
   - component: {fileID: 1006437904813830178}
   - component: {fileID: 6830584709200825563}
-  - component: {fileID: -5176196968575611487}
   - component: {fileID: -6019083343771084398}
   - component: {fileID: 3225731359289034523}
   - component: {fileID: 4198265940881737061}
@@ -83,21 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &-5176196968575611487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5113778651081701383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e95eb2dd05bbb54990c4d03fd563b05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 1
-  deathParticles: {fileID: 6716374145233554661, guid: 77a94bd73ac8c7943abf1f2e5c3a82a8,
-    type: 3}
 --- !u!114 &-6019083343771084398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,12 +131,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5113778651081701383}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8072921324bc7443b8387f6eae8308e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  opponent: 
+  opponent: Player
   deathParticles: {fileID: 6716374145233554661, guid: 77a94bd73ac8c7943abf1f2e5c3a82a8,
     type: 3}
   health: 1

@@ -22,21 +22,23 @@ public class BatHit : MonoBehaviour
     {
         if (other.gameObject.tag != opponent) return;
         Debug.Log("Hit the enemy");
-       
-        health = 1;
+
+
+        health -= 1;
         if(health <= 0)
         {
             Death();
+            ScoreScript.scoreValue += 1;
         }
         
 
     }
 
+
     void Death()
     {
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         isDead = true;
-        ScoreScript.scoreValue += 10;
         Destroy(gameObject);
     }
 }

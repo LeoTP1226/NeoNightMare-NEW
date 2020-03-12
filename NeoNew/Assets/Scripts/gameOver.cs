@@ -14,11 +14,11 @@ public class gameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Healthiness.PlayerIsDead())
+        if (NumberOfHearts.PlayerIsDead())
         {
             print("You died!");
             Over();
-            Healthiness.resetPlayer();
+            NumberOfHearts.resetPlayer();
             ScoreScript.scoreValue = 0;
             SoundManagerScript.PlaySound("CharaDeath");
         }

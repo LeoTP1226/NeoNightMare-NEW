@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3785397131211305238}
   - component: {fileID: 7472852535534554607}
   - component: {fileID: -7851263292974202285}
-  - component: {fileID: -6777238029360272132}
   - component: {fileID: 3760693408449255029}
   - component: {fileID: -6483522534853982034}
   - component: {fileID: 6537228522897882856}
@@ -96,21 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
---- !u!114 &-6777238029360272132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9189649763756685619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e95eb2dd05bbb54990c4d03fd563b05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 1
-  deathParticles: {fileID: 4009367385708485788, guid: ef1a8651270525f429f27a01d6beac27,
-    type: 3}
 --- !u!54 &3760693408449255029
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -147,12 +131,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9189649763756685619}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8072921324bc7443b8387f6eae8308e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  opponent: 
+  opponent: Player
   deathParticles: {fileID: 4009367385708485788, guid: ef1a8651270525f429f27a01d6beac27,
     type: 3}
   health: 1
