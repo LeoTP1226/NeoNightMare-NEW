@@ -21,7 +21,7 @@ public class BatHit : MonoBehaviour
     {
         if (other.gameObject.tag != Opposite) return;
         Debug.Log("Hit the enemy");
-       
+
         health -= 1;
         if(health <= 0)
         {
@@ -29,6 +29,8 @@ public class BatHit : MonoBehaviour
             Destroy(gameObject);
             Instantiate(deathParticles, transform.position, Quaternion.identity);
             ScoreScript.scoreValue += 10;
+            SoundManagerScript.PlaySound("Hit");
+            SoundManagerScript.PlaySound("Dmg");
         }
         
 

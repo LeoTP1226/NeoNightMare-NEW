@@ -24,7 +24,7 @@ public class NumberOfHearts : MonoBehaviour
             health = numOfHearts;
 
         }
-        for (int i = 0; i < hearts.Length; i++)
+        for (int i = 1; i < hearts.Length; i++)
         {
 
             if (i < numOfHearts)
