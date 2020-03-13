@@ -137,6 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  Opposite: Rabbit
+  Opposite: Player
   deathParticles: {fileID: 6716374145233554661, guid: 77a94bd73ac8c7943abf1f2e5c3a82a8,
     type: 3}
