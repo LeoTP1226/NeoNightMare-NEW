@@ -17,7 +17,7 @@ public class NumberOfHearts : MonoBehaviour
     [SerializeField] private static bool isDead;
 
     // Update is called once per frame
-    private void Update()
+    public void Update()
     {
         if (health > numOfHearts)
         {
@@ -56,13 +56,13 @@ public class NumberOfHearts : MonoBehaviour
         CharaHealth -= 1;
         numOfHearts -= 1;
 
-        if (CharaHealth < 1)
+        if (CharaHealth < 0)
         {
             Death();
         }
     }
 
-    void Death()
+   void Death()
     {
         isDead = true;
         Instantiate(deathParticles, transform.position, Quaternion.identity);

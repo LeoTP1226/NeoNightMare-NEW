@@ -106,6 +106,8 @@ GameObject:
   - component: {fileID: 3760693408449255029}
   - component: {fileID: -6483522534853982034}
   - component: {fileID: 6537228522897882856}
+  - component: {fileID: 1431405698775966013}
+  - component: {fileID: -4310882531734785563}
   m_Layer: 0
   m_Name: monster2_Lo
   m_TagString: Enemy
@@ -181,12 +183,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9189649763756685619}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50fd7712f86fc784aaa4f8cfb29696d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  target: {fileID: 2818522922874547401, guid: 13f58c8032803014fb4aa22e81f0c913, type: 3}
+  speed: 1
 --- !u!54 &3760693408449255029
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -232,3 +236,31 @@ MonoBehaviour:
   Opposite: Player
   deathParticles: {fileID: 4009367385708485788, guid: ef1a8651270525f429f27a01d6beac27,
     type: 3}
+--- !u!114 &1431405698775966013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189649763756685619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5035f2b4315d75d4e9c6c3d9b044a5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2818522922874547401, guid: 13f58c8032803014fb4aa22e81f0c913, type: 3}
+  moveSpeed: 2
+  currentRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &-4310882531734785563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189649763756685619}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49635a18bd12e9846a06f572f4121754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2818522922874547401, guid: 13f58c8032803014fb4aa22e81f0c913, type: 3}

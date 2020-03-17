@@ -8,6 +8,9 @@ public class EnemyFollow : MonoBehaviour
     private Rigidbody rb;
     private Vector3 movement;
     public float moveSpeed = 5f;
+    public Transform target;
+    public float speed = 1.0f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,24 +22,40 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = player.transform.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+       Vector3 direction = player.transform.position - transform.position;
+      //  float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         //rb.rotation = angle; 
         direction.Normalize();
         movement = direction;
-        moveCharacter(movement); 
-
-    }
-
-    private void FixUpdate()
-    {
+        //moveCharacter(movement);
+        //moveCharacter(Vector3 direction);
+    
+       
         
+
+       // Vector3 targetDirection = player.transform.position - transform.position;
+         float singleStep = speed * Time.deltaTime;
+         Vector3 newDirection = Vector3.RotateTowards(transform.forward, direction, singleStep, 0.0f);
+         Debug.DrawRay(transform.position, newDirection, Color.red);
+         transform.rotation = Quaternion.LookRotation(newDirection * 180.0f);
+
+        rb.MovePosition((Vector3)transform.position + (direction * moveSpeed * Time.deltaTime));
+
+
+
     }
 
-    void moveCharacter(Vector3 direction)
+   /* private void FixedUpdate()
     {
-        rb.MovePosition((Vector3)transform.position + (direction * moveSpeed * Time.deltaTime));
+        Vector3 direction = player.transform.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, speed * Time.deltaTime);
+
     }
+    */
+    
+
+   
 }
 
 
