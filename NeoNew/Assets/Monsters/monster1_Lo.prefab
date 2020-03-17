@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -3999893527235737703}
   - component: {fileID: -1187743610952181129}
   - component: {fileID: -1334377000047989692}
+  - component: {fileID: 9042590088344765703}
   m_Layer: 0
   m_Name: monster1_Lo
   m_TagString: Enemy
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4820519948638593632}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5035f2b4315d75d4e9c6c3d9b044a5c1, type: 3}
   m_Name: 
@@ -173,6 +174,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2818522922874547401, guid: 13f58c8032803014fb4aa22e81f0c913, type: 3}
+--- !u!114 &9042590088344765703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4820519948638593632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fa98a56e8433c4fafdb6f40533c1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
 --- !u!1 &5182072574563504733
 GameObject:
   m_ObjectHideFlags: 0
