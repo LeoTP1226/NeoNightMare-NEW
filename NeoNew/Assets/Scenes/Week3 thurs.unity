@@ -47027,11 +47027,11 @@ PrefabInstance:
     - target: {fileID: 1085370369, guid: 13f58c8032803014fb4aa22e81f0c913, type: 3}
       propertyPath: hearts.Array.data[1]
       value: 
-      objectReference: {fileID: 646797089}
+      objectReference: {fileID: 1484534216}
     - target: {fileID: 1085370369, guid: 13f58c8032803014fb4aa22e81f0c913, type: 3}
       propertyPath: hearts.Array.data[2]
       value: 
-      objectReference: {fileID: 595961199}
+      objectReference: {fileID: 1484534216}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f58c8032803014fb4aa22e81f0c913, type: 3}
 --- !u!1 &1593966330
