@@ -3,7 +3,13 @@ guid: 7a7f824052bf6de4295168d61b4dca22
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - deathParticles: {fileID: 6286102509810972249, guid: e9d416d27bfbce149b327bb14d3bc670,
+      type: 3}
+  - fullHeart: {fileID: 21300000, guid: de42169e33bffc141b7a9959e392bb12, type: 3}
+  - emptyHeart: {fileID: 21300000, guid: 22adc0afe2e88fe4390162aaa4432391, type: 3}
+  - Player: {fileID: 1244751009158094554, guid: 13f58c8032803014fb4aa22e81f0c913,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

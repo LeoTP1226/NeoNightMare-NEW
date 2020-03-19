@@ -22,7 +22,7 @@ public class EnemyFollow_V02 : MonoBehaviour
     {
         Vector3 direction = player.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(direction,  Vector3.up);
-        rb.rotation = rotation - direction.y(90f);
+        rb.rotation = rotation;
         direction.Normalize();
         movement = direction;
 
