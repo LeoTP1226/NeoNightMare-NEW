@@ -13,6 +13,7 @@ public class NumberOfHearts : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public GameObject Player;
+    public GameObject Heart01;
 
     [SerializeField] private static bool isDead;
 
@@ -56,9 +57,10 @@ public class NumberOfHearts : MonoBehaviour
         CharaHealth -= 1;
         numOfHearts -= 1;
 
-        if (CharaHealth < 0)
+        if (CharaHealth < 1)
         {
             Death();
+            Heart01.SetActive(false);
         }
     }
 
@@ -67,8 +69,6 @@ public class NumberOfHearts : MonoBehaviour
         isDead = true;
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         Destroy(Player.gameObject);
-
-
     }
 
     public static bool PlayerIsDead()

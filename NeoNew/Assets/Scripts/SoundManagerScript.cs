@@ -5,16 +5,16 @@ using UnityEngine;
 public class SoundManagerScript : MonoBehaviour
 {
 
-    public static AudioClip BatHit, ButtonSelect, CharaDeath, RainSound, DamageSound;
+    public static AudioClip SFX_BatHit, SFX_ButtonSelect, SFX_CharacterDeath, SFX_RainSound, SFX_DamageSound;
     static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
     {
-        BatHit = Resources.Load<AudioClip>("BatHit");
-        ButtonSelect = Resources.Load<AudioClip>("ButtonSelect");
-        CharaDeath = Resources.Load<AudioClip>("CharaDeath");
-        RainSound = Resources.Load<AudioClip>("RainSound");
-        DamageSound = Resources.Load<AudioClip>("DamageSound");
+        SFX_BatHit = Resources.Load<AudioClip>("SFX_BatHit");
+        SFX_ButtonSelect = Resources.Load<AudioClip>("SFX_ButtonSelect");
+        SFX_CharacterDeath = Resources.Load<AudioClip>("SFX_CharacterDeath");
+        SFX_RainSound = Resources.Load<AudioClip>("SFX_RainSound");
+        SFX_DamageSound = Resources.Load<AudioClip>("SFX_DamageSound");
 
         audioSrc = GetComponent<AudioSource>();
 
@@ -31,19 +31,19 @@ public class SoundManagerScript : MonoBehaviour
         switch (clip)
         {
             case "Hit":
-                audioSrc.PlayOneShot(BatHit);
+                audioSrc.PlayOneShot(SFX_BatHit);
                 break;
             case "Select":
-                audioSrc.PlayOneShot(ButtonSelect);
+                audioSrc.PlayOneShot(SFX_ButtonSelect);
                 break;
             case "CharaDeath":
-                audioSrc.PlayOneShot(CharaDeath);
+                audioSrc.PlayOneShot(SFX_CharacterDeath);
                 break;
             case "Rain":
-                audioSrc.PlayOneShot(RainSound);
+                audioSrc.PlayOneShot(SFX_RainSound);
                 break;
             case "Dmg":
-                audioSrc.PlayOneShot(DamageSound);
+                audioSrc.PlayOneShot(SFX_DamageSound);
                 break;
         }
     }
